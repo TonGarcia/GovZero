@@ -67,6 +67,8 @@ plugins
 plugins/*
 platforms
 platforms/*
+resources/ios
+resources/android
 .sourcemaps
 .sourcemaps/*
 functions/lib
