@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ProjectsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Projects</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-segment [(ngModel)]="categoriesType">
+    <ion-segment-button value="0">Por área</ion-segment-button>
+    <ion-segment-button value="1">Categorias da ONU</ion-segment-button>
+  </ion-segment>
+
+  <global-goals></global-goals>
+
+  <!-- <ion-card *ngFor="let category of categories" (click)="goTo(category.tag)">
+    <img src="{{ category.img }}"/>
+    <div class="over-card">
+      <div class="card-title vertical-align text-center"> {{ category.name }} </div>
+    </div>
+  </ion-card> -->
+
+</ion-content>

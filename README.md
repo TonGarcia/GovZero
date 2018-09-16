@@ -51,7 +51,7 @@ Run all those commands at root folder (not inside the functions folder)
 
 
 ## Production Commands
-- if no release sign key, generate it (Sign pass for it app (melhor-da-vez) = zerogovapp):
+- if no release sign key, generate it (Sign pass for it app (melhor-da-vez) = zerougov):
     ```shell
       $ keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
     ```
@@ -122,6 +122,8 @@ Export cordova Gradle version to use as local var:
 
 If still not working, throwing facebook strings error (add the following into platforms/android/app/src/main/res/values/strings.xml):
   ```xml
-    <string name="fb_app_id">ID</string>
-    <string name="fb_app_name">APP_NAME</string>
+    <android>
+      <string name="fb_app_id">ID</string>
+      <string name="fb_app_name">APP_NAME</string>
+    </android>
   ```

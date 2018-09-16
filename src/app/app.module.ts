@@ -4,20 +4,25 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { PoliticiansPage } from '../pages/politicians/politicians';
+import { ProjectsPage } from '../pages/projects/projects';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ProjectCategoriesProvider } from '../providers/project-categories/project-categories';
+import { GlobalGoalsComponent } from '../components/global-goals/global-goals';
 
 @NgModule({
   declarations: [
     MyApp,
+    PoliticiansPage,
+    ProjectsPage,
     AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    GlobalGoalsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,14 +32,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    PoliticiansPage,
+    ProjectsPage,
     HomePage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ProjectCategoriesProvider
   ]
 })
 export class AppModule {}

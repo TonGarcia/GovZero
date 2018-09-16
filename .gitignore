@@ -73,3 +73,7 @@ resources/android
 .sourcemaps/*
 functions/lib
 functions/lib/*
+
+.sourcemaps
+codecanyon-20234423-ionic-3-ui-themetemplate-app-material-design-blue-light.zip
+codecanyon-20234423-ionic-3-ui-themetemplate-app-material-design-blue-light/

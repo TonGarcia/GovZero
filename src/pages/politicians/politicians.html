@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Colinhas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+    </ion-item>
+  </ion-list> -->
+
+  <ion-segment [(ngModel)]="politiciansType">
+    <ion-segment-button value="0">Colinha Indicada</ion-segment-button>
+    <ion-segment-button value="1">Crie sua Colinha</ion-segment-button>
+  </ion-segment>
+
+</ion-content>
