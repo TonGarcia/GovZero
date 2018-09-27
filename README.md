@@ -1,4 +1,4 @@
-# ZeroGov
+# GovZero
 Propostas para um Governo com pouco gasto ou até mesmo a CUSTO ZERO
 
 ## Set it up
@@ -51,7 +51,7 @@ Run all those commands at root folder (not inside the functions folder)
 
 
 ## Production Commands
-- if no release sign key, generate it (Sign pass for it app (melhor-da-vez) = zerougov):
+- if no release sign key, generate it (Sign pass for it app (govzero) = zerougov):
     ```shell
       $ keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
     ```
@@ -69,7 +69,7 @@ Run all those commands at root folder (not inside the functions folder)
 
 - Verify the signature command: root_path/platforms/android/build/outputs/apk/
     ```shell
-        $ rm -rf melhor-da-vez.apk && zipalign -v 4 app-release-unsigned.apk melhor-da-vez.apk
+        $ rm -rf govzero.apk && zipalign -v 4 app-release-unsigned.apk govzero.apk
     ```
 
 - if no zipaling set, add it to bash profile to create the alias command (MacOS X):

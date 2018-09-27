@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "1016755266372",
+    "firebase_url": "https://govzero-app.firebaseio.com",
+    "project_id": "govzero-app",
+    "storage_bucket": "govzero-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016755266372:android:6f69bbb1de32cf4c",
+        "android_client_info": {
+          "package_name": "govzero.com.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016755266372-kefsbe6kde6keaeqqv6u1qknl9r1pro5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "govzero.com.br",
+            "certificate_hash": "5f75d8e6a4cd4a2fa53c7689bb27bc96b0659a88"
+          }
+        },
+        {
+          "client_id": "1016755266372-hjvg0vtinln89q1d1h9h067g2vgheibb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeugSpaIsOlaUPHPfkTcXiec18GquyWuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016755266372-hjvg0vtinln89q1d1h9h067g2vgheibb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1016755266372-qdls1qfnsheg3gjhflckqjqn19919v5q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "govzero.com.br"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

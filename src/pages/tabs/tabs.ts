@@ -10,11 +10,11 @@ import { ProjectsPage } from '../projects/projects';
 export class TabsPage {
 
   // Candidate numbers
-  tab1Root = PoliticiansPage;
+  PoliticiansTab = PoliticiansPage;
   // List of Projects
-  tab2Root = ProjectsPage;
+  ProjectsTab = ProjectsPage;
   // About the initiative
-  tab3Root = AboutPage;
+  AboutTab = AboutPage;
 
   constructor() {
 

@@ -1,0 +1,24 @@
+page-login {
+
+  .content {
+    background: linear-gradient(#ECE9E6, #FFF) !important;
+  }
+
+  ion-grid {
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  #terms {
+    margin-top: 25px;
+    
+    .item-inner {
+      border-bottom: none !important;
+    }
+  }
+
+}
