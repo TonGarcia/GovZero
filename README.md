@@ -94,6 +94,12 @@ Run all those commands at root folder (not inside the functions folder)
 PUG is a HTML pre-compiler, which means that it have a specific semantic to generate the final HTML files.
 [Check it Documentation](https://pugjs.org)
 
+## Solve Google Service
+
+1. Download Google.plist & Google.json from Firebase (native config)
+1. Add google-services.json to platform/android/app/
+1. Add GoogleService-Info.plist to platform/ios/
+
 ## GoogleMap PlugIn
 
 1. create a project on [Console Developers Google](https://console.developers.google.com/apis/credentials)
@@ -123,7 +129,7 @@ Export cordova Gradle version to use as local var:
 If still not working, throwing facebook strings error (add the following into platforms/android/app/src/main/res/values/strings.xml):
   ```xml
     <android>
-      <string name="fb_app_id">ID</string>
-      <string name="fb_app_name">APP_NAME</string>
+      <string name="fb_app_id">314361069388630</string>
+      <string name="fb_app_name">GovZero</string>
     </android>
   ```

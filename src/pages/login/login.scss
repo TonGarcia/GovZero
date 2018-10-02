@@ -1,7 +1,15 @@
 page-login {
 
   .content {
-    background: linear-gradient(#ECE9E6, #FFF) !important;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#ECE9E6), to(#FFF)) !important; */
+    /* background: linear-gradient(#ECE9E6, #FFF) !important; */
+    background: url(../assets/imgs/waves-bg.png) no-repeat;
+    /* background-size: cover; */
+    /* background: url(https://media.istockphoto.com/vectors/abstract-wave-background-with-transparent-blue-and-gray-lines-modern-vector-id923023622) no-repeat; */
+    background-size: cover;
+    background-position-y: 300px!important;
+    background-color: white;
+    background-position-x: 0 !important;
   }
 
   ion-grid {
@@ -18,6 +26,14 @@ page-login {
     
     .item-inner {
       border-bottom: none !important;
+    }
+  }
+
+  #social_login {
+    button {
+      ion-icon {
+        margin-left: 7px;
+      }
     }
   }
 

@@ -15,25 +15,28 @@
   <ion-grid> <!-- *ngIf="!error" -->
     <ion-row>
       <ion-col col-6 offset-3>
-        <img src="assets/imgs/shield.png" />
+        <img src="assets/imgs/g-dots-logo.png" />
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <p class="center-text text-muted" col-12>Acesse sua conta.</p>
+      <p class="center-text text-muted" col-12>
+        149.895 vagas já preenchidas! <br>
+        <b>Restam apenas 105 vagas!</b>
+      </p>
     </ion-row>
 
     <ion-row>
-      <button color="primary" (click)="fbSign()" [disabled]="!termsAgree" ion-button icon-start col-10 offset-1>
+      <button color="primary" (click)="fbSign()" [disabled]="!termsAgree" ion-button icon-start col-12>
         <ion-icon name="logo-facebook"></ion-icon>
-        Acesse com o Facebook
+        Garantir vaga com o Facebook
       </button>
     </ion-row>
 
     <ion-row>
-      <button color="primary" (click)="googleSign()" [disabled]="!termsAgree" ion-button icon-start col-10 offset-1>
+      <button color="primary" (click)="googleSign()" [disabled]="!termsAgree" ion-button icon-start col-12>
         <ion-icon name="logo-google"></ion-icon>
-        Acesse com o Gmail
+        Garantir vaga com o Gmail
       </button>
     </ion-row>
 
@@ -46,7 +49,7 @@
         </ion-col>
         <ion-col col-10 no-padding no-margin>
           <ion-item no-padding no-margin no-lines>
-            Li e aceito os <a target="_blank" href="https://melhordavez.com/terms-of-service.html">Termos de Serviço</a> e as <a target="_blank" href="https://melhordavez.com/policy.html">Políticas de Privacidade</a>.
+            Li e aceito os <a target="_blank" href="https://govzero.com.br/terms-of-service.html">Termos de Serviço</a> e as <a target="_blank" href="https://govzero.com.br/privacy.html">Políticas de Privacidade</a>.
           </ion-item>
         </ion-col>
       </ion-row>

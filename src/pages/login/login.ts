@@ -27,7 +27,7 @@ export class LoginPage {
   error = null;
   fbScope = [];
   loading: any;
-  termsAgree = false;
+  termsAgree = true;
   newAccCredential: any;
   authAlreadyExists = 'auth/account-exists-with-different-credential';
 
@@ -134,8 +134,10 @@ export class LoginPage {
             message = 'Não foi possível abrir a tela de login externo. Error: auth/popup-blocked.';
             break;
           default:
-            message = `Não foi possível abrir tela desejada. Error: ${err.code || err}`;
+            message = `Não foi possível abrir tela desejada. Error: ${err.code || JSON.stringify(err)}`;
         }
+
+        if(err.errorCode == '4201') message = 'v 7Você cancelou o LogIn Social';
 
         this.alertService.show('Erro', message, ['OK']);
       });
@@ -145,6 +147,7 @@ export class LoginPage {
     let nvc = this.app.getRootNav();
     nvc.setRoot(TabsPage);
     nvc.popToRoot();
+    location.reload();
   }
 
   private signFBWeb(resp) {
