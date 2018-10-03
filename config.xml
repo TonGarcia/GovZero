@@ -82,16 +82,15 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-facebook4" spec="^3.0.0">
+    <plugin name="cordova-plugin-facebook4" spec="^2.2.0">
         <variable name="APP_ID" value="314361069388630" />
         <variable name="APP_NAME" value="GovZero" />
-        <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.36.0" />
+        <variable name="ANDROID_SDK_VERSION" value="4.+" />
     </plugin>
-    <plugin name="cordova-plugin-googleplus" spec="^5.3.2">
+    <plugin name="cordova-plugin-googleplus" spec="^5.3.0">
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.1016755266372-qdls1qfnsheg3gjhflckqjqn19919v5q" />
-        <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
     </plugin>
     <allow-navigation href="http://192.168.1.16:8101" sessionid="141f7a4d" />
     <engine name="ios" spec="4.5.5" />
-    <engine name="android" spec="7.0.0" />
+    <engine name="android" spec="~7.0.0" />
 </widget>
