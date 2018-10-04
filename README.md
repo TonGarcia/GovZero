@@ -78,6 +78,16 @@ Run all those commands at root folder (not inside the functions folder)
         >>> alias zipalign='~/Library/Android/sdk/build-tools/VERSION/zipalign'
         $ source ~/.bash_profile
     ```
+    
+- Generate HashKeys
+
+  ```shell
+    $ keytool -exportcert -alias alias_name -keystore release.keystore | openssl sha1 -binary | openssl base64
+    password: release_key_password (zerougov)
+    
+    $ keytool -exportcert -alias alias_name -keystore release.keystore | openssl sha1 -binary | openssl base64
+    password: android     
+  ```
 
 
 ## String Formats

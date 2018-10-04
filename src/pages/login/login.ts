@@ -137,8 +137,7 @@ export class LoginPage {
             message = `Não foi possível abrir tela desejada. Error: ${err.code || JSON.stringify(err)}`;
         }
 
-        if(err.errorCode == '4201') message = 'v 7Você cancelou o LogIn Social';
-
+        if(err.errorCode == '4201') message = 'Você cancelou o LogIn Social';
         this.alertService.show('Erro', message, ['OK']);
       });
   }
